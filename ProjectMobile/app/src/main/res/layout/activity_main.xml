@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.mo_20.projetmobile2027.MainActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="Let's Memorise !"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:textSize="40sp"
+            />
+
+
+        <Button
+            android:text="PLAY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Play"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="10dp"
+            android:onClick="click"
+            />
+
+        <Button
+            android:text="ADD CARD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Add"
+            android:background="@android:color/holo_green_dark"
+            android:layout_marginTop="10dp"
+            android:onClick="click"
+            />
+
+        <Button
+            android:text="REMOVE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Remove"
+            android:background="@color/colorAccent"
+            android:layout_marginTop="10dp"
+            android:onClick="click"
+            />
+        <Button
+            android:text="OPTION"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Option"
+            android:background="@color/colorAccent"
+            android:layout_marginTop="10dp"
+            android:onClick="optionclick"
+            />
+
+        <Button
+            android:text="telecharger"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            android:onClick="download"
+            />
+        <ScrollView android:id="@+id/textAreaScroller"
+            android:layout_width="fill_parent"
+            android:layout_height="373px"
+            android:layout_x="0px"
+            android:layout_y="25px"
+            android:scrollbars="vertical">
+            <TextView
+                android:id="@+id/baseData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/fbedittext"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/fbedittext"
+                android:layout_marginTop="22dp"
+                android:lines="7"
+                />
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>
